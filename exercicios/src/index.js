@@ -6,11 +6,39 @@ import ReactDom from 'react-dom'
 //O nome do arquivo não tem problema ter letra maiuscula ou minuscula.
 // const elemento = <h1>React2 </h1>
 
-import BomDia from './componentes/BomDia'
+// import BomDia from './componentes/BomDia'
 
+import {BoaTarde, BoaNoite } from './componentes/Multiplos'
+// import Multi from './componentes/Multiplos'
+// import Multi, {BoaTarde} from './componentes/Multiplos'
+// import BoaTarde, { BoaNoite } from './componentes/Multiplos' //Eu posso usar esse BoaTarde para fora se no arquivo Multiplos.jsx estiver como export default BoaTarde
+
+ReactDom.render(
+    <div>
+        <BoaTarde nome="Ana" />
+        <BoaNoite nome="Bia" />
+    </div>,
+    document.getElementById('root')
+)
+
+// ReactDom.render(
+//     <div>
+//         <Multi.BoaTarde nome="Ana" />
+//         <Multi.BoaNoite nome="Bia" />
+//     </div>,
+//     document.getElementById('root')
+// )
+
+// ReactDom.render(
+//     <div>
+//         <Multi.BoaTarde nome="Ana" />
+//         <BoaNoite nome="Bia" />
+//     </div>,
+//     document.getElementById('root')
+// )
 
 //passando um parametro
-ReactDom.render(<BomDia nome="Guilherme"/>, document.getElementById('root'))
+// ReactDom.render(<BomDia nome="Guilherme"/>, document.getElementById('root'))
 
 
 // ReactDom.render(elemento, document.getElementById('root'))
