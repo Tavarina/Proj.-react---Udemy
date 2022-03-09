@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
+import Pai from './componentes/Pai'
 // import Primeiro from './componentes/Primeiro'    //Eu posso chamar esse arquivo de qualquar nome, desde que mantenha o caminho do arquivo
 //o componente não pode ter letra minuscula quando for chamado, pois não irá ser renderizado
 //O nome do arquivo não tem problema ter letra maiuscula ou minuscula.
@@ -12,14 +13,23 @@ import ReactDom from 'react-dom'
 // import Multi from './componentes/Multiplos'
 // import Multi, {BoaTarde} from './componentes/Multiplos'
 // import BoaTarde, { BoaNoite } from './componentes/Multiplos' //Eu posso usar esse BoaTarde para fora se no arquivo Multiplos.jsx estiver como export default BoaTarde
-import Saudacao from './componentes/Saudacao'
+// import Saudacao from './componentes/Saudacao'
 
 ReactDom.render(
     <div>
-        <Saudacao tipo="Bom dia" nome="João" />
+        <Pai nome="Paulo" sobrenome="Silva">
+            {/* Como passo os componentes Filhos aqui? */}
+            </Pai>
     </div>,
     document.getElementById('root')
 )
+// ReactDom.render(
+//     <div>
+    
+//      <Saudacao tipo="Bom dia" nome="João" />  */
+//     </div>,
+//     document.getElementById('root')
+// )
 // ReactDom.render(
 //     <div>
 //         <BoaTarde nome="Ana" />
