@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDom from 'react-dom'
 
 import Pai from './componentes/Pai'
+import Filho from './componentes/Filho'
 // import Primeiro from './componentes/Primeiro'    //Eu posso chamar esse arquivo de qualquar nome, desde que mantenha o caminho do arquivo
 //o componente não pode ter letra minuscula quando for chamado, pois não irá ser renderizado
 //O nome do arquivo não tem problema ter letra maiuscula ou minuscula.
@@ -18,11 +19,20 @@ import Pai from './componentes/Pai'
 ReactDom.render(
     <div>
         <Pai nome="Paulo" sobrenome="Silva">
-            {/* Como passo os componentes Filhos aqui? */}
+            <Filho nome="Pedro"  />
+             <Filho nome="Paulo"  />
+            <Filho nome="Carla"  /> 
             </Pai>
     </div>,
     document.getElementById('root')
 )
+
+// ReactDom.iv>nome="Paulo" sobrenome=       <Filho nome="Pedro" sobrenome="S       <Filho nome="Paulo" sobrenome="Silva" />
+//             <Filho nome="Carla" sobrenome="Silva" />
+//             </Pai>
+//     </div>,
+//     document.getElementById('root')
+// )
 // ReactDom.render(
 //     <div>
     
