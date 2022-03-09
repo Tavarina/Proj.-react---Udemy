@@ -8,18 +8,25 @@ import ReactDom from 'react-dom'
 
 // import BomDia from './componentes/BomDia'
 
-import {BoaTarde, BoaNoite } from './componentes/Multiplos'
+// import {BoaTarde, BoaNoite } from './componentes/Multiplos'
 // import Multi from './componentes/Multiplos'
 // import Multi, {BoaTarde} from './componentes/Multiplos'
 // import BoaTarde, { BoaNoite } from './componentes/Multiplos' //Eu posso usar esse BoaTarde para fora se no arquivo Multiplos.jsx estiver como export default BoaTarde
+import Saudacao from './componentes/Saudacao'
 
 ReactDom.render(
     <div>
-        <BoaTarde nome="Ana" />
-        <BoaNoite nome="Bia" />
+        <Saudacao tipo="Bom dia" nome="João" />
     </div>,
     document.getElementById('root')
 )
+// ReactDom.render(
+//     <div>
+//         <BoaTarde nome="Ana" />
+//         <BoaNoite nome="Bia" />
+//     </div>,
+//     document.getElementById('root')
+// )
 
 // ReactDom.render(
 //     <div>
